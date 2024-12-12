@@ -4,6 +4,7 @@ const { Schema } = mongoose;
 const careerSchema = new Schema(
   {
     title: { type: String, required: true },
+    shortTitle:{type:String,required:true},
     description: { type: String, required: true },
     qualifications: { type: String, required: true },
     skills: { type: [String], required: true },
@@ -14,6 +15,7 @@ const careerSchema = new Schema(
     category: { type: String, required: true },
     jobType: { type: String, required: true },
     location: { type: String, required: true },
+    link:{type:String,required:true},
     image: {
       url: { type: String, required: false },
       filename: { type: String, required: false },
